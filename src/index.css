@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", sans-serif;
+    background: #0a0a0a;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+@layer utilities {
+    @keyframes blink {
+
+        0%,
+        100% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+    }
+
+    .animate-blink {
+        animation: blink 1s step-end infinite;
+    }
+
+    @keyframes loading {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translatex(250%);
+        }
+    }
+
+    .animate-loading-bar {
+        animation: loading 1s ease infinite;
+    }
+}
+
+/* @keyframes blob {
+    0% {
+        transform: translate(0px, 0px) scale(1);
+    }
+
+    33% {
+        transform: translate(10px, -15px) scale(1.05);
+    }
+
+    66% {
+        transform: translate(-10px, 10px) scale(0.95);
+    }
+
+    100% {
+        transform: translate(0px, 0px) scale(1);
+    }
+} */
+
+@keyframes blob {
+    0% {
+        /* transform: translate(0px, 0px) scale(1); */
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+        /* transform: translate(10px, -15px) scale(1.05); */
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100% {
+        /* transform: translate(0px, 0px) scale(1); */
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+.animate-blob {
+    animation: blob 7s infinite ease-in-out;
+}
