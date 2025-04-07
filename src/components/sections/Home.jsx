@@ -1,5 +1,5 @@
 import React from 'react'
-import imgPath from '../../assets/homePhoto.jpg'
+import imgPath from '../../assets/miaFoto.jpg'
 import CVPath from '../../assets/CV EN Ferraris.pdf'
 
 const Home = () => {
