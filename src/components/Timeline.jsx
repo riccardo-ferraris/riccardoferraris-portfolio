@@ -8,8 +8,8 @@ const educationData = [
 ];
 
 const workData = [
-    { year: '2024 - Oggi', title: 'Fanculone professionista', place: 'Freelance' },
-    { year: '2021 - 2023', title: 'Sfruttato per 500€/m', place: 'Somma Vesuviana' },
+    { year: '2025 - Present', title: 'Frontend Web Dev', place: 'Freelance' },
+    { year: 'sep 2023 - feb 2024', title: 'Web Dev', place: 'Somma Vesuviana' },
 ];
 
 const Timeline = () => {

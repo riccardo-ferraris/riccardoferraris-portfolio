@@ -1,12 +1,9 @@
 import CardSkill from "../CardSkill";
 import Timeline from "../Timeline";
 import { motion } from "framer-motion";
+import { frontend, backend, soft, tools } from "../../skills"
 
 const About = () => {
-    const frontendSkills = ["JavaScript", "React", "HTML", "CSS", "Tailwind CSS", "Bootstrap", "UI/UX Basics", "Responsive Design"];
-    const backendSkills = ["Java", "Dart", "C#", "MySQL", "Python", "Firebase"];
-    const toolsSkills = ["Git", "GitHub", "Visual Studio Code"];
-    const softSkills = ["Problem Solving", "Teamwork", "Communication", "Adaptability", "Time Management"];
 
     return (
         <section id="about" className="min-h-screen flex items-center justify-center py-20">
@@ -34,10 +31,10 @@ const About = () => {
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <CardSkill title="Frontend" skills={frontendSkills} />
-                        <CardSkill title="Backend" skills={backendSkills} />
-                        <CardSkill title="Tools" skills={toolsSkills} />
-                        <CardSkill title="Soft Skills" skills={softSkills} />
+                        <CardSkill title="Frontend" skills={frontend} />
+                        <CardSkill title="Backend" skills={backend} />
+                        <CardSkill title="Tools" skills={tools} />
+                        <CardSkill title="Soft Skills" skills={soft} />
                     </div>
                 </div>
 

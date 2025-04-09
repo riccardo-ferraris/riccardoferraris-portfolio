@@ -29,6 +29,9 @@ const MobileMenu = ({ menuOpen, setMenuOpen }) => {
             <AnchorMobileMenu href="#projects" onClick={() => setMenuOpen(false)} menuOpen={menuOpen}>
                 Projects
             </AnchorMobileMenu>
+            <AnchorMobileMenu href="#reviews" onClick={() => setMenuOpen(false)} menuOpen={menuOpen}>
+                Reviews
+            </AnchorMobileMenu>
             <AnchorMobileMenu href="#contact" onClick={() => setMenuOpen(false)} menuOpen={menuOpen}>
                 Contact
             </AnchorMobileMenu>

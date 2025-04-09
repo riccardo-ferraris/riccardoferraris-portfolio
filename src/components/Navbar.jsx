@@ -12,9 +12,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
             <div className='max-w-5xl mx-auto px-4'>
                 <div className='flex justify-between items-center h-16'>
                     <a href="#home" className='font-mono text-xl font-bold text-white'>
-                        <span className='text-purple-600'>&lt;</span>
-                        <span className='text-blue-500'>Ferraris </span>
-                        <span className='text-purple-600'>/&gt;</span>
+                        Riccardo Kevin Ferraris
                     </a>
 
                     <div className='w-7 h5 relative cursor-pointer z-40 md:hidden' onClick={() => setMenuOpen(prev => !prev)}>
@@ -27,6 +25,8 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
                         <AnchorNavbar href="#about">About</AnchorNavbar>
 
                         <AnchorNavbar href="#projects">Projects</AnchorNavbar>
+
+                        <AnchorNavbar href="#reviews">Reviews</AnchorNavbar>
 
                         <AnchorNavbar href="#contact">Contact</AnchorNavbar>
                     </div>
