@@ -45,7 +45,7 @@ const Contact = () => {
         try {
             await emailjs.send(
                 import.meta.env.VITE_SERVICE_ID,
-                import.meta.env.VITE_TEMPLATE_ID,
+                import.meta.env.VITE_CONTACT_TEMPLATE_ID,
                 values,
                 import.meta.env.VITE_PUBLIC_KEY);
             toast.success('Email sent successfully!');
@@ -127,20 +127,19 @@ const Contact = () => {
                         {isSending ? "Sending..." : "Send Message"}
                     </button>
 
+                    <ToastContainer
+                        position="top-center"
+                        autoClose={3000}
+                        hideProgressBar={false}
+                        newestOnTop={false}
+                        closeOnClick
+                        rtl={false}
+                        pauseOnFocusLoss
+                        draggable
+                        pauseOnHover
+                        theme="dark"
+                    />
                 </form>
-                
-                <ToastContainer
-                    position="top-center"
-                    autoClose={3000}
-                    hideProgressBar={false}
-                    newestOnTop={false}
-                    closeOnClick
-                    rtl={false}
-                    pauseOnFocusLoss
-                    draggable
-                    pauseOnHover
-                    theme="dark"
-                />
 
                 <div className="flex justify-center gap-6 mt-10 text-2xl text-white">
                     <SocialAnchor

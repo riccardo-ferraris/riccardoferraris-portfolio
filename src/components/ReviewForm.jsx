@@ -5,6 +5,7 @@ import { nameRegex } from '../regex'
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import StarInput from './StarInput'
+import emailjs from 'emailjs-com'
 
 const ReviewForm = () => {
     const [review, setReview] = useState({
@@ -48,12 +49,11 @@ const ReviewForm = () => {
         setIsSending(true);
 
         try {
-            // await emailjs.send(
-            //     import.meta.env.VITE_SERVICE_ID,
-            //     import.meta.env.VITE_TEMPLATE_ID,
-            //     values,
-            //     import.meta.env.VITE_PUBLIC_KEY);
-            console.log('Review sent successfully!', review);
+            await emailjs.send(
+                import.meta.env.VITE_SERVICE_ID,
+                import.meta.env.VITE_REVIEW_TEMPLATE_ID,
+                review,
+                import.meta.env.VITE_PUBLIC_KEY);
             toast.success('Review sent successfully!');
 
             resetForm();
@@ -137,19 +137,19 @@ const ReviewForm = () => {
                     </button>
 
                 </form>
+                <ToastContainer
+                    position="top-center"
+                    autoClose={3000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                    theme="dark"
+                />
             </motion.div>
-            <ToastContainer
-                position="top-center"
-                autoClose={3000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-                theme="dark"
-            />
         </section>
     );
 }
