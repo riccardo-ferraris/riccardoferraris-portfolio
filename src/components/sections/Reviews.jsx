@@ -1,6 +1,7 @@
 import reviews from "../../reviews";
 import ReviewCard from "../ReviewCard";
 import { motion } from "framer-motion";
+import ReviewForm from "../ReviewForm";
 
 const Reviews = () => {
     return (
@@ -24,6 +25,8 @@ const Reviews = () => {
                         ))}
                     </div>
                 </div>
+
+                <ReviewForm />
             </motion.div>
         </section>
     );

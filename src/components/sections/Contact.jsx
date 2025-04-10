@@ -6,9 +6,7 @@ import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import SocialAnchor from '../SocialAnchor'
-
-const nameRegex = /^[a-zA-ZÀ-ÿ\s'-]{2,}$/;
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+import { nameRegex, emailRegex } from '../../regex'
 
 const Contact = () => {
     const [values, setValues] = useState({
@@ -129,19 +127,20 @@ const Contact = () => {
                         {isSending ? "Sending..." : "Send Message"}
                     </button>
 
-                    <ToastContainer
-                        position="top-center"
-                        autoClose={3000}
-                        hideProgressBar={false}
-                        newestOnTop={false}
-                        closeOnClick
-                        rtl={false}
-                        pauseOnFocusLoss
-                        draggable
-                        pauseOnHover
-                        theme="dark"
-                    />
                 </form>
+                
+                <ToastContainer
+                    position="top-center"
+                    autoClose={3000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                    theme="dark"
+                />
 
                 <div className="flex justify-center gap-6 mt-10 text-2xl text-white">
                     <SocialAnchor
