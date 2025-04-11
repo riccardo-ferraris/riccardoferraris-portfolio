@@ -88,7 +88,7 @@ const ReviewForm = () => {
 
 
     return (
-        <section id='contact' className='min-h-screen flex items-center justify-center py-20'>
+        <div className='min-h-screen flex items-center justify-center py-20'>
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -150,7 +150,7 @@ const ReviewForm = () => {
                     theme="dark"
                 />
             </motion.div>
-        </section>
+        </div>
     );
 }
 
