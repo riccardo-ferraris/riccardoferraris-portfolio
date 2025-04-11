@@ -14,7 +14,7 @@ const AnchorNavbar = ({ children, href }) => {
     `
 
     const activeStyle = isActive
-        ? `text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 before:w-full`
+        ? `text-gray-300 xl:text-transparent xl:bg-clip-text xl:bg-gradient-to-r xl:from-blue-500 xl:to-purple-600 xl:before:w-full`
         : `text-gray-300`
 
     return (
