@@ -15,11 +15,11 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
                         Riccardo Kevin Ferraris
                     </a>
 
-                    <div className='w-7 h5 relative cursor-pointer z-40 md:hidden' onClick={() => setMenuOpen(prev => !prev)}>
+                    <div className='w-7 h5 relative cursor-pointer z-40 lg:hidden' onClick={() => setMenuOpen(prev => !prev)}>
                         &#9776;
                     </div>
 
-                    <div className='hidden md:flex items-center space-x-8'>
+                    <div className='hidden lg:flex items-center space-x-8'>
                         <AnchorNavbar href="#home">Home</AnchorNavbar>
 
                         <AnchorNavbar href="#about">About</AnchorNavbar>

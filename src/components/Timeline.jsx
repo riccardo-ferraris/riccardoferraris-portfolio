@@ -17,7 +17,7 @@ const Timeline = () => {
     const data = selected === 'education' ? educationData : workData;
 
     return (
-        <section id="timeline" className=" py-5 px-4 bg-black text-white">
+        <div className=" py-5 px-4 bg-black text-white">
             <div className="text-center mb-10">
                 <div className="inline-flex gap-8 justify-center">
                     {['education', 'work'].map((type) => {
@@ -79,7 +79,7 @@ const Timeline = () => {
                     })}
                 </ul>
             </div>
-        </section>
+        </div>
     );
 };
 

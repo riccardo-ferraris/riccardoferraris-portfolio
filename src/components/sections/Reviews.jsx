@@ -5,7 +5,7 @@ import ReviewForm from "../ReviewForm";
 
 const Reviews = () => {
     return (
-        <section id="reviews" className="py-20 px-4 bg-black text-white overflow-hidden">
+        <section id="reviews" className="py-20 px-4 bg-black text-white overflow-hidden min-h-screen">
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
