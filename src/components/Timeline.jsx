@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 
 const educationData = [
     { year: 'feb 2025 - Present', title: 'Advanced React Course', place: 'Udemy' },
+    { year: 'may 2025 - jun 2025', title: 'Academy Java & SQL', place: 'ItConsulting' },
     { year: 'sep 2020 - feb 2025', title: "Bachelor's Degree in Computer Science", place: 'University of Salerno' },
     { year: 'sep 2015 - sep 2020', title: 'Scientific High School Diploma', place: 'Liceo Caravaggio' },
 ];
