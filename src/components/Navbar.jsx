@@ -11,9 +11,10 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
     <nav className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <a href="#home" className="font-mono text-xl font-bold text-white">
-            {/* <img src={logo} className="w-45 h-auto" alt="Logo" /> */}
-          </a>
+          {/* <a href="#home" className="font-mono text-xl font-bold text-white">
+            <img src={logo} className="w-45 h-auto" alt="Logo" />
+          </a> */}
+          <div></div>
 
           <div
             className="w-7 h5 relative cursor-pointer z-40 lg:hidden"
