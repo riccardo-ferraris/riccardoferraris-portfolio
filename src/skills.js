@@ -17,8 +17,12 @@ export const backend = [
   "Python",
   "Firebase",
   "PL/SQL",
+  "Node.js",
+  "Express.js",
+  "REST APIs",
+  "MongoDB",
 ];
-export const tools = ["Git", "GitHub", "Visual Studio Code"];
+export const tools = ["Git", "GitHub", "Visual Studio Code", "Postman"];
 export const soft = [
   "Problem Solving",
   "Teamwork",

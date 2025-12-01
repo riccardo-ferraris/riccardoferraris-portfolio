@@ -1,6 +1,6 @@
 import React from 'react'
-import imgPath from '../../assets/miaFoto.jpg'
-import CVPath from '../../assets/CV Inglese.pdf'
+import imgPath from '../../assets/miaFoto.jpeg'
+import CVPath from '../../assets/CV Riccardo Kevin Ferraris.pdf'
 
 const Home = () => {
     const commonTitleStyle = 'text-5xl md:text-7xl font-bold 2xl:text-left '
