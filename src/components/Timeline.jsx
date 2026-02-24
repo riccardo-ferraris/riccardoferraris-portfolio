@@ -35,8 +35,10 @@ const educationData = [
 ];
 
 const workData = [
-	{ year: "2025 - Present", title: "Software Developer", place: "Freelance" },
-	{ year: "sep 2023 - feb 2024", title: "Web Developer", place: "Somma Vesuviana" },
+	{ year: "6 dec 2025 - Current", title: "Fullstack Developer", place: "Alca Broker" },
+	{ year: "15 aug 2025 - Current", title: "Fullstack Developer", place: "Freelance" },
+	{ year: "10 mar 2024 - 30 jan 2026", title: "Software Developer", place: "Mundus Code Ltd" },
+	{ year: "1 sep 2023 - 28 feb 2024", title: "Web Developer", place: "Alca Broker" },
 ];
 
 const Timeline = () => {
