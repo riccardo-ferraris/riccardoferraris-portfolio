@@ -4,6 +4,7 @@ import CVPath from '../../assets/CV Riccardo Kevin Ferraris.pdf'
 
 const Home = () => {
     const commonTitleStyle = 'text-5xl md:text-7xl font-bold 2xl:text-left '
+    const cvDownloadUrl = `${CVPath}?v=${Date.now()}`
 
     return (
         <section id='home' className='pt-24 2xl:pt-0 min-h-screen flex flex-col-reverse 2xl:flex-row items-center justify-around relative mx-[10%]'>
@@ -21,7 +22,7 @@ const Home = () => {
                 </p>
 
                 <div className='flex flex-row justify-center 2xl:justify-start gap-4'>
-                    <a href={CVPath} download
+                    <a href={cvDownloadUrl} download
                         className='bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative 
                     overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)] hover:cursor-pointer'
                     >
